@@ -12,7 +12,7 @@ export default function Home() {
 
     useEffect(() => {
         const fetchPosts = async () => {
-            const res = await axios.get("https://corsanywhere.herokuapp.com/https://jss-diaries.herokuapp.com/api/posts" + search)
+            const res = await axios.get("https://jss-diaries.herokuapp.com/api/posts" + search)
             setPosts(res.data)
         }
         fetchPosts();
